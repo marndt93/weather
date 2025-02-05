@@ -1,0 +1,11 @@
+.settings {
+    padding: 10px;
+    @apply text-zinc-200;
+    .settings-title {
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+    .material-symbols-outlined {
+        @apply text-zinc-200;
+    }
+}

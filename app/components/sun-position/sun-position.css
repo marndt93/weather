@@ -1,0 +1,31 @@
+.sun-position {
+    @apply bg-zinc-900;
+    height: 10px;
+    margin: 10px 0;
+    position: relative;
+    .sun {
+        top: 1px;
+        height: 8px;
+        width: 8px;
+        position: absolute;
+        background-color: red;
+        border-radius: 50%;
+        .inside {
+            margin-top: 1px;
+            margin-left: 1px;
+            height: 6px;
+            width: 6px;
+            background-color: orange;
+            border-radius: 50%;
+        }
+    }
+    .night {
+        @apply bg-zinc-900;
+    }
+    .day {
+        @apply bg-zinc-500;
+    }
+    .half {
+        @apply bg-zinc-700;
+    }
+}

@@ -1,0 +1,17 @@
+.solar {
+    width: 100%;
+    padding: 0 20px;
+    .solar-time {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .flip {
+        transform: rotate(180deg);
+    }
+    .sunrise {
+        @apply text-zinc-200;
+    }
+    .sunset {
+        @apply text-zinc-400;
+    }
+}

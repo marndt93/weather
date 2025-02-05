@@ -1,13 +1,13 @@
-import { Main } from "~/components/main/main";
+import { Settings } from "~/components/settings/settings";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Weather" },
+    { title: "Settings" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }
 
-export default function Home() {
-  return <Main />;
+export default function Setting() {
+  return <Settings />;
 }

@@ -1,13 +1,13 @@
-import { Main } from "~/components/main/main";
+import { RadarViewer } from "~/components/radar/radar-viewer";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Weather" },
+    { title: "Radar" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }
 
-export default function Home() {
-  return <Main />;
+export default function Radar() {
+  return <RadarViewer />;
 }

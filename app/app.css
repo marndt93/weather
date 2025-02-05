@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
@@ -7,9 +9,44 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  height: 100vh;
+  @apply bg-white dark:bg-zinc-800;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
+  }
+
+  Weather {
+    height: 100%;
+  }
+
+  :focus-visible {
+    outline: none;
+  }
+
+  fieldset {
+    @apply border-zinc-400 !important;
+    @apply text-zinc-300 !important;
+  }
+  svg {
+    @apply text-zinc-300 !important;
+  }
+  label {
+    @apply text-zinc-300 !important;
+  }
+  label.mui-focused {
+    @apply text-zinc-300 !important;
+  }
+  .MuiSelect-select {
+    @apply text-zinc-300 !important;
+  }
+  input {
+    @apply text-zinc-300 !important;
+  }
+  .Mui-disabled {
+    @apply bg-zinc-100 !important;
+  }
+  .Mui-selected {
+    @apply bg-zinc-700 !important;
   }
 }

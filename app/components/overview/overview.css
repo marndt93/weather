@@ -1,0 +1,16 @@
+.weather-overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .temp {
+        font-size: 65px;
+        sup {
+            font-size: 50%;
+            top: -1em;
+        }
+    }
+    .weather-code {
+        font-size: 20px;
+    }
+}

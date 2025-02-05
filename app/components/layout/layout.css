@@ -1,0 +1,64 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.material-icons {
+    @apply text-zinc-300;
+    cursor: pointer;
+}
+
+.layout-header {
+    @apply bg-zinc-900;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+
+    .layout-header-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .menu-icon {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .layout-details {
+            margin: 5px;
+            .location {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .coord {
+                @apply text-zinc-400;
+                font-size: 12px;
+            }
+        }
+    }
+    .layout-header-right {
+        display: flex;
+        flex-direction: row;
+        margin-right: 15px;
+        .more-icon {
+            margin-left: 15px;
+        }
+    }
+}
+
+.drawer-content {
+    @apply bg-zinc-800;
+    @apply text-zinc-200;
+    width: 250px;
+    height: 100%;
+}
+
+.MuiList-root {
+    @apply bg-zinc-800;
+    @apply text-zinc-200;
+}
+
+.MuiTouchRipple-root:hover {
+    @apply bg-zinc-700;
+}

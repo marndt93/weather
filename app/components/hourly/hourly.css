@@ -1,0 +1,26 @@
+.hourly {
+    width: 100%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;   /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .hourly-item {
+        @apply bg-zinc-900;
+        padding: 10px 0;
+        border-radius: 15px;
+        min-width: 105px;
+        .time {
+            align-self: center;
+            padding-bottom: 10px;
+            font-size: 16px;
+        }
+        .details {
+            font-size: 12px;
+        }
+    }
+    .weather-icon {
+        align-self: center;
+    }
+}
